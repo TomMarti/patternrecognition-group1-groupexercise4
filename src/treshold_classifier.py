@@ -11,7 +11,7 @@ class TresholdClassifier:
         # computed by func computing_treshold on main
         # (mean 0 + mean 1) / 2 = 52914 not so efficient
         # Mean 1 ~ 30000 -> 35000 more balanced
-        self.treshold = 200 if normalized else 35000
+        self.treshold = 300 if normalized else 35000
         self.normalize = normalized
         
         self.genuine_signatures = self.load_signatures(genuine_signatures_folder)
